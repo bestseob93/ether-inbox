@@ -1,29 +1,29 @@
-const assert = require('assert');
-const ganache = require('ganache-cli');
-const Web3 = require('web3'); // constructor 함수는 대문자로 시작
-const web3 = new Web3(ganache.provider());
+// const assert = require('assert');
+// const ganache = require('ganache-cli');
+// const Web3 = require('web3'); // constructor 함수는 대문자로 시작
+// const web3 = new Web3(ganache.provider());
 
-class Car {
-  park() {
-      return 'stopped';
-  }
+// class Car {
+//   park() {
+//       return 'stopped';
+//   }
 
-  drive() {
-      return 'vroom';
-  }
-}
+//   drive() {
+//       return 'vroom';
+//   }
+// }
 
-let car;
-beforeEach(() => {
-  car = new Car();
-});
+// let car;
+// beforeEach(() => {
+//   car = new Car();
+// });
 
-describe('Car class', () => {
-  it('can park', () => {
-    assert.equal(car.park(), 'stopped');
-  });
+// describe('Car class', () => {
+//   it('can park', () => {
+//     assert.equal(car.park(), 'stopped');
+//   });
 
-  it('can drive', () => {
-    assert.equal(car.drive(), 'vroom');
-  });
-});
+//   it('can drive', () => {
+//     assert.equal(car.drive(), 'vroom');
+//   });
+// });
